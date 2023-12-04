@@ -1,0 +1,24 @@
+{
+  "name": "01_goit_node_home_work",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^11.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "start": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "ts-node": "^10.9.1"
+  }
+}
