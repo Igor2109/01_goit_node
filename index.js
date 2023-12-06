@@ -18,10 +18,12 @@ program.parse(process.argv);
 const argv = program.opts();
 
 // TODO: рефакторити
-function invokeAction({ action, id, name, email, phone }) {
+async function invokeAction({ action, id, name, email, phone }) {
   switch (action) {
     case "list":
-      listContacts();
+      const contacts = await listContacts();
+      console.table(contacts);
+
       break;
 
     case "get":
